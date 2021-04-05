@@ -45,7 +45,7 @@ int main(int argc,const char** argv)
     int mode = base_encode::data_analysis(text);
     int version =1;
     char error_mode = 'H';
-    base_encode* m_encode;
+    base_encode* m_encode = NULL;
     switch(mode)
     {
         case 0:
@@ -64,7 +64,7 @@ int main(int argc,const char** argv)
     m_encode->error_correction_coding();
     m_encode->set_matrix();
     draw(m_encode->get_matrix(),"");
-
+    delete m_encode;
     return 0;
 }
 

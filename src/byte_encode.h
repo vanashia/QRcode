@@ -9,7 +9,6 @@ class byte_encode: public base_encode {
 public:
     byte_encode(const char* text,int version, int mode, const char error_mode);
     virtual void data_encoding();
-//private:
 
 };
 

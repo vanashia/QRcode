@@ -10,9 +10,7 @@ class numeric_encode : public base_encode
 {
 public:
     numeric_encode(const char* text, int version,int mode,const char error_mode);
-    ~numeric_encode();
 
-//    vector<int> numeric_encoder();
     virtual  void data_encoding();
 private:
 };
